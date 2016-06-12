@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TTTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSNumber *n = @(66624.00);
+    NSLog(@"%@", n);
+    
+    UIViewController *viewController = [[TTTableViewController alloc] init];
+    UINavigationController *navViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = navViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
