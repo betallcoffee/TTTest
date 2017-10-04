@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C753C848D0F60FDC9C3FA90 /* libPods-TTTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE5D567E0928345B67A1ED0 /* libPods-TTTest.a */; };
 		EC4092C61B991F8700BF46EC /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4092C51B991F8600BF46EC /* CustomView.m */; };
+		EC52F9791F848CC100A2F3A4 /* AnimView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC52F9781F848CC100A2F3A4 /* AnimView.m */; };
+		EC52F97C1F84959200A2F3A4 /* TTThread.m in Sources */ = {isa = PBXBuildFile; fileRef = EC52F97B1F84959200A2F3A4 /* TTThread.m */; };
 		EC98705C1AB962FE0082A832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98705B1AB962FE0082A832 /* main.m */; };
 		EC98705F1AB962FE0082A832 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98705E1AB962FE0082A832 /* AppDelegate.m */; };
 		EC9870621AB962FE0082A832 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9870611AB962FE0082A832 /* ViewController.m */; };
@@ -40,6 +42,10 @@
 		EC4092C51B991F8600BF46EC /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		EC4727791D0D8FBD0023EE51 /* libpili-librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpili-librtmp.a"; path = "Pods/../build/Debug-iphoneos/libpili-librtmp.a"; sourceTree = "<group>"; };
 		EC4C82101BACDC2C00B3C151 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "Pods/../build/Debug-iphoneos/libMasonry.a"; sourceTree = "<group>"; };
+		EC52F9771F848CC100A2F3A4 /* AnimView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimView.h; sourceTree = "<group>"; };
+		EC52F9781F848CC100A2F3A4 /* AnimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimView.m; sourceTree = "<group>"; };
+		EC52F97A1F84959200A2F3A4 /* TTThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTThread.h; sourceTree = "<group>"; };
+		EC52F97B1F84959200A2F3A4 /* TTThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTThread.m; sourceTree = "<group>"; };
 		EC9870561AB962FE0082A832 /* TTTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC98705A1AB962FE0082A832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC98705B1AB962FE0082A832 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,6 +146,10 @@
 				ECF629C31F7CF8860088CEEA /* TestGCD.h */,
 				ECF629C41F7CF8860088CEEA /* TestGCD.m */,
 				ECC66F941F79E213003F2076 /* TestProtocol.h */,
+				EC52F9771F848CC100A2F3A4 /* AnimView.h */,
+				EC52F9781F848CC100A2F3A4 /* AnimView.m */,
+				EC52F97A1F84959200A2F3A4 /* TTThread.h */,
+				EC52F97B1F84959200A2F3A4 /* TTThread.m */,
 				EC9870661AB962FE0082A832 /* Images.xcassets */,
 				EC9870681AB962FE0082A832 /* LaunchScreen.xib */,
 				EC9870591AB962FE0082A832 /* Supporting Files */,
@@ -334,7 +344,9 @@
 				EC9870811AB9631C0082A832 /* BViewController.m in Sources */,
 				ECE263FD1BE7A40B003C1AC9 /* TTTableViewController.m in Sources */,
 				EC98705F1AB962FE0082A832 /* AppDelegate.m in Sources */,
+				EC52F97C1F84959200A2F3A4 /* TTThread.m in Sources */,
 				EC98705C1AB962FE0082A832 /* main.m in Sources */,
+				EC52F9791F848CC100A2F3A4 /* AnimView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

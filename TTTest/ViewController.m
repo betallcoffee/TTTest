@@ -6,13 +6,18 @@
 //  Copyright (c) 2015 tina. All rights reserved.
 //
 
+#import <Masonry.h>
+
 #import "ViewController.h"
 #import "BViewController.h"
 #import "CustomView.h"
+#import "AnimView.h"
 
 typedef void(^blk_t)(void);
 
 @interface ViewController ()
+
+@property (nonatomic, strong) AnimView *animView;
 
 @end
 
@@ -22,11 +27,6 @@ typedef void(^blk_t)(void);
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"viewDidLoad A");
-    
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 88, 44)];
-    button.backgroundColor = [UIColor blueColor];
-    [button addTarget:self action:@selector(pushB) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview: button];
     
     int j = 1;
     int *i = &j;
@@ -44,21 +44,19 @@ typedef void(^blk_t)(void);
     CustomView *customView = [[CustomView alloc] init];
     customView.frame = self.view.bounds;
     [self.view addSubview:customView];
-//    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:customView
-//                                                                  attribute:NSLayoutAttributeCenterX
-//                                                                  relatedBy:NSLayoutRelationEqual
-//                                                                     toItem:self.view
-//                                                                  attribute:NSLayoutAttributeCenterX
-//                                                                 multiplier:1 constant:5];
-//    [self.view addConstraint:constraint];
-//    constraint = [NSLayoutConstraint constraintWithItem:customView
-//                                              attribute:NSLayoutAttributeCenterY
-//                                              relatedBy:NSLayoutRelationEqual
-//                                                 toItem:self.view
-//                                              attribute:NSLayoutAttributeCenterY
-//                                             multiplier:1 constant:5];
-//    [self.view addConstraint:constraint];
     
+    self.animView = [AnimView new];
+    self.animView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.animView];
+    [self.animView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.animView.superview);
+        make.width.height.mas_equalTo(44);
+    }];
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 88, 44)];
+    button.backgroundColor = [UIColor blueColor];
+    [button addTarget:self action:@selector(pushB) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview: button];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -86,9 +84,10 @@ typedef void(^blk_t)(void);
 #pragma mark
 #pragma mark UIButton touch event
 - (void)pushB {
-    BViewController *b = [[BViewController alloc] init];
+//    BViewController *b = [[BViewController alloc] init];
 //    [self.navigationController pushViewController:b animated:YES];
-    [self presentViewController:b animated:YES completion:nil];
+//    [self presentViewController:b animated:YES completion:nil];
+    [self.animView startAnim];
 }
 
 @end
