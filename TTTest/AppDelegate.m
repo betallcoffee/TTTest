@@ -8,8 +8,13 @@
 
 #import "AppDelegate.h"
 #import "TTTableViewController.h"
+#import "TTSpringBoardServices.h"
+#import "ViewController.h"
+#import "TestGCD.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) TestGCD *testGCD;
 
 @end
 
@@ -19,14 +24,31 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    {
+        TestGCD *testGCD = [TestGCD new];
+        [testGCD testCycleRef];
+        
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"testKey" object:testGCD];
+    }
+    
+    self.testGCD = [TestGCD new];
+    [self.testGCD testCycleRef];
+    
+    TTSpringBoardServices *sbs = [TTSpringBoardServices new];
+    [sbs loadPrivateAPI];
+    NSArray *apps = [sbs currentRunningApps];
+    NSLog(@"apps : %@", apps);
+    
     NSNumber *n = @(66624.00);
     NSLog(@"%@", n);
     
-    UIViewController *viewController = [[TTTableViewController alloc] init];
-    UINavigationController *navViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
+//    UIViewController *viewController = [[TTTableViewController alloc] init];
+//    UINavigationController *navViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
+    UIViewController *viewController = [ViewController new];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = navViewController;
+//    self.window.rootViewController = navViewController;
+    self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
     
     return YES;

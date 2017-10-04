@@ -42,21 +42,22 @@ typedef void(^blk_t)(void);
     
     
     CustomView *customView = [[CustomView alloc] init];
+    customView.frame = self.view.bounds;
     [self.view addSubview:customView];
-    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:customView
-                                                                  attribute:NSLayoutAttributeCenterX
-                                                                  relatedBy:NSLayoutRelationEqual
-                                                                     toItem:self.view
-                                                                  attribute:NSLayoutAttributeCenterX
-                                                                 multiplier:1 constant:5];
-    [self.view addConstraint:constraint];
-    constraint = [NSLayoutConstraint constraintWithItem:customView
-                                              attribute:NSLayoutAttributeCenterY
-                                              relatedBy:NSLayoutRelationEqual
-                                                 toItem:self.view
-                                              attribute:NSLayoutAttributeCenterY
-                                             multiplier:1 constant:5];
-    [self.view addConstraint:constraint];
+//    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:customView
+//                                                                  attribute:NSLayoutAttributeCenterX
+//                                                                  relatedBy:NSLayoutRelationEqual
+//                                                                     toItem:self.view
+//                                                                  attribute:NSLayoutAttributeCenterX
+//                                                                 multiplier:1 constant:5];
+//    [self.view addConstraint:constraint];
+//    constraint = [NSLayoutConstraint constraintWithItem:customView
+//                                              attribute:NSLayoutAttributeCenterY
+//                                              relatedBy:NSLayoutRelationEqual
+//                                                 toItem:self.view
+//                                              attribute:NSLayoutAttributeCenterY
+//                                             multiplier:1 constant:5];
+//    [self.view addConstraint:constraint];
     
 }
 

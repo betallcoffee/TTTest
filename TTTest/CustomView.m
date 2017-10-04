@@ -21,19 +21,36 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        self.backgroundColor = [UIColor whiteColor];
         [self mas_drawView];
     }
     return self;
 }
 
 - (void)mas_drawView {
+    self.leftLabel.text = @"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
     [self addSubview:self.leftLabel];
-    self.leftLabel.text = @"leftLabel";
-
+//    self.leftLabel.preferredMaxLayoutWidth = 100;
+//    [self.leftLabel contentHuggingPriorityForAxis:UILayoutConstraintAxisHorizontal];
+//    [self.leftLabel setContentHuggingPriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
     [self.leftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         __weak UIView *superview = self.leftLabel.superview;
-        make.edges.equalTo(superview);
+        make.top.equalTo(superview);
+        make.left.equalTo(superview);
     }];
+    
+    self.rightLabel.text = @"rightLabelrightLabelrightLabelrightLabelrightLabelrightLabelrightLabelrightLabelrightLabelrightLabelrightLabelrightLabelrightLabelrightLabel";
+    self.rightLabel.numberOfLines = 0;
+    [self addSubview:self.rightLabel];
+    self.rightLabel.preferredMaxLayoutWidth = 200;
+    [self.rightLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [self.rightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        __weak UIView *superview = self.rightLabel.superview;
+        make.top.equalTo(superview);
+        make.right.equalTo(superview);
+        make.left.equalTo(self.leftLabel.mas_right);
+    }];
+    
 }
 
 - (void)drawView {

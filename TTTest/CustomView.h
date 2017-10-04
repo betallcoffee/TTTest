@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomView : UIView
+#import "TestProtocol.h"
+
+@interface CustomView : UIView<TestProtocol>
+
+@property (copy) NSMutableArray *array;
 
 @end

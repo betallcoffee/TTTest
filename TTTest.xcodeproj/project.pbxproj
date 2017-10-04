@@ -16,7 +16,10 @@
 		EC98706A1AB962FE0082A832 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9870681AB962FE0082A832 /* LaunchScreen.xib */; };
 		EC9870761AB962FF0082A832 /* TTTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9870751AB962FF0082A832 /* TTTestTests.m */; };
 		EC9870811AB9631C0082A832 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9870801AB9631C0082A832 /* BViewController.m */; };
+		ECE0F1061E9FCF1D0062C927 /* TTSpringBoardServices.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE0F1051E9FCF1D0062C927 /* TTSpringBoardServices.m */; };
+		ECE0F1081E9FD83F0062C927 /* libproc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE0F1071E9FD83F0062C927 /* libproc.tbd */; };
 		ECE263FD1BE7A40B003C1AC9 /* TTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE263FC1BE7A40B003C1AC9 /* TTTableViewController.m */; };
+		ECF629C51F7CF8860088CEEA /* TestGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF629C41F7CF8860088CEEA /* TestGCD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 		D9F7D300E08DC0BEF5F575A1 /* Pods-TTTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTTest/Pods-TTTest.release.xcconfig"; sourceTree = "<group>"; };
 		EC4092C41B991F8600BF46EC /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		EC4092C51B991F8600BF46EC /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		EC4727791D0D8FBD0023EE51 /* libpili-librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpili-librtmp.a"; path = "Pods/../build/Debug-iphoneos/libpili-librtmp.a"; sourceTree = "<group>"; };
 		EC4C82101BACDC2C00B3C151 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "Pods/../build/Debug-iphoneos/libMasonry.a"; sourceTree = "<group>"; };
 		EC9870561AB962FE0082A832 /* TTTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC98705A1AB962FE0082A832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,8 +54,14 @@
 		EC9870751AB962FF0082A832 /* TTTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTestTests.m; sourceTree = "<group>"; };
 		EC98707F1AB9631B0082A832 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
 		EC9870801AB9631C0082A832 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		ECC66F941F79E213003F2076 /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
+		ECE0F1041E9FCF1D0062C927 /* TTSpringBoardServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSpringBoardServices.h; sourceTree = "<group>"; };
+		ECE0F1051E9FCF1D0062C927 /* TTSpringBoardServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSpringBoardServices.m; sourceTree = "<group>"; };
+		ECE0F1071E9FD83F0062C927 /* libproc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libproc.tbd; path = usr/lib/libproc.tbd; sourceTree = SDKROOT; };
 		ECE263FB1BE7A40B003C1AC9 /* TTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewController.h; sourceTree = "<group>"; };
 		ECE263FC1BE7A40B003C1AC9 /* TTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTableViewController.m; sourceTree = "<group>"; };
+		ECF629C31F7CF8860088CEEA /* TestGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCD.h; sourceTree = "<group>"; };
+		ECF629C41F7CF8860088CEEA /* TestGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE0F1081E9FD83F0062C927 /* libproc.tbd in Frameworks */,
 				1C753C848D0F60FDC9C3FA90 /* libPods-TTTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +87,8 @@
 		74FA4CE61E2327E565C32E1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECE0F1071E9FD83F0062C927 /* libproc.tbd */,
+				EC4727791D0D8FBD0023EE51 /* libpili-librtmp.a */,
 				EC4C82101BACDC2C00B3C151 /* libMasonry.a */,
 				5DE5D567E0928345B67A1ED0 /* libPods-TTTest.a */,
 			);
@@ -124,9 +137,14 @@
 				ECE263FC1BE7A40B003C1AC9 /* TTTableViewController.m */,
 				EC4092C41B991F8600BF46EC /* CustomView.h */,
 				EC4092C51B991F8600BF46EC /* CustomView.m */,
+				ECF629C31F7CF8860088CEEA /* TestGCD.h */,
+				ECF629C41F7CF8860088CEEA /* TestGCD.m */,
+				ECC66F941F79E213003F2076 /* TestProtocol.h */,
 				EC9870661AB962FE0082A832 /* Images.xcassets */,
 				EC9870681AB962FE0082A832 /* LaunchScreen.xib */,
 				EC9870591AB962FE0082A832 /* Supporting Files */,
+				ECE0F1041E9FCF1D0062C927 /* TTSpringBoardServices.h */,
+				ECE0F1051E9FCF1D0062C927 /* TTSpringBoardServices.m */,
 			);
 			path = TTTest;
 			sourceTree = "<group>";
@@ -209,9 +227,11 @@
 				TargetAttributes = {
 					EC9870551AB962FE0082A832 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4B2QYB9XQX;
 					};
 					EC98706E1AB962FF0082A832 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4B2QYB9XQX;
 						TestTargetID = EC9870551AB962FE0082A832;
 					};
 				};
@@ -307,7 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE0F1061E9FCF1D0062C927 /* TTSpringBoardServices.m in Sources */,
 				EC4092C61B991F8700BF46EC /* CustomView.m in Sources */,
+				ECF629C51F7CF8860088CEEA /* TestGCD.m in Sources */,
 				EC9870621AB962FE0082A832 /* ViewController.m in Sources */,
 				EC9870811AB9631C0082A832 /* BViewController.m in Sources */,
 				ECE263FD1BE7A40B003C1AC9 /* TTTableViewController.m in Sources */,
@@ -429,11 +451,28 @@
 			baseConfigurationReference = 4129743360EFFE0DDF12203C /* Pods-TTTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4B2QYB9XQX;
 				INFOPLIST_FILE = TTTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/PLPlayerKit\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/pili-librtmp\"",
+					"-fembed-bitcode",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -444,6 +483,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tina.TestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -453,11 +493,28 @@
 			baseConfigurationReference = D9F7D300E08DC0BEF5F575A1 /* Pods-TTTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4B2QYB9XQX;
 				INFOPLIST_FILE = TTTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/PLPlayerKit\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/pili-librtmp\"",
+					"-fembed-bitcode",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -468,6 +525,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tina.TestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -476,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4B2QYB9XQX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -495,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4B2QYB9XQX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

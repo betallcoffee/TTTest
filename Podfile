@@ -5,7 +5,7 @@ platform :ios, '8.0'
 
 target 'TTTest' do
 pod 'Masonry'
-pod 'PLPlayerKit', '2.1.2'
+pod 'PLPlayerKit', '2.3.0'
 end
 
 target 'TTTestTests' do

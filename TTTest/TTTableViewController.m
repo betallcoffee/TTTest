@@ -8,12 +8,14 @@
 
 #import "Masonry/Masonry.h"
 #import "TTTableViewController.h"
+#import <PLPlayerKit/PLPlayerKit.h>
 
 @interface TTTableViewController ()<UITableViewDataSource, UITableViewDelegate>
 {
     NSMutableArray *_expandArray;
     UITableView *_tableView;
     NSInteger _currentSection;
+    PLPlayer *_player;
 }
 
 @end

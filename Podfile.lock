@@ -1,15 +1,19 @@
 PODS:
-  - Masonry (0.6.2)
-  - PLPlayerKit (2.1.2):
-    - PLPlayerKit/precompiled (= 2.1.2)
-  - PLPlayerKit/precompiled (2.1.2)
+  - Masonry (1.0.1)
+  - pili-librtmp (1.0.2)
+  - PLPlayerKit (2.2.0):
+    - pili-librtmp
+    - PLPlayerKit/precompiled (= 2.2.0)
+  - PLPlayerKit/precompiled (2.2.0):
+    - pili-librtmp
 
 DEPENDENCIES:
   - Masonry
-  - PLPlayerKit (= 2.1.2)
+  - PLPlayerKit (= 2.2.0)
 
 SPEC CHECKSUMS:
-  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
-  PLPlayerKit: e0f92eb447e9224eae5f3ab894378f68d691a74b
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  pili-librtmp: 97dc6774ac4ebb9935f04d5f35f3f6d8c4a4f37c
+  PLPlayerKit: 1cef24f72d517519c74e797581fccc2db8db1a2e
 
 COCOAPODS: 0.39.0
